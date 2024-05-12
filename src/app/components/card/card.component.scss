@@ -1,0 +1,64 @@
+.card {
+    padding: 10px;
+    max-width: 350px;
+    height: 200px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+       
+    background-color: #EDEDED;
+    border-radius: 6px;
+
+    .type-task {
+        font-size: 12px;
+        background-color: #D9D9D9;
+        width: fit-content;
+        padding: 3px 9px;
+        border-radius: 10px;
+    }
+
+    h3 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: light;
+        
+        text-align: center;
+
+        color: #3D3C3C;
+    }
+
+    .action-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        button {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            background-color: #D9D9D9;
+            border: none;
+            outline: none;
+            border-radius: 2px;
+            
+            padding: 5px 9px;
+
+            cursor: pointer;
+        }
+    }
+}
+
+.fa-pen-to-square {
+    color: var(--blue);
+}
+
+.fa-trash {
+    color: var(--red);
+}
+
+.fa-square-check {
+    color: var(--bg-color);
+}
