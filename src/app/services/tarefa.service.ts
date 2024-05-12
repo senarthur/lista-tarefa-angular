@@ -31,6 +31,13 @@ export class TarefaService {
     return this.task$;
   }
 
+  getTask(id: string): ITask {
+    const task = this.taskSubject.value.find(task => task.id === id);
+
+    if (task != undefined) return task;
+    else return createNewTask();
+  }
+
   addTask(task: ITask) {
     const id = Date.now().toString(16);
     task.id = id;

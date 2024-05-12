@@ -1,9 +1,9 @@
 <div class="card">
     <div class="type-task">
-        <p>{{ type }}</p>
+        <p>{{ task.type }}</p>
     </div>
     <div class="content">
-        <h3>{{ title }}</h3>
+        <h3>{{ task.title }}</h3>
     </div>
     <div class="action-buttons">
         <button>
@@ -12,7 +12,7 @@
         </button>
         <button>
             <i class="fa-solid fa-trash"></i>
-            <p>Excluir</p>
+            <p (click)="deleteTask()">Excluir</p>
         </button>
         <button>
             <i class="fa-regular fa-square-check"></i>

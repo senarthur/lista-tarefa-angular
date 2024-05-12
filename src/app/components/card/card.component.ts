@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { TarefaService } from '../../services/tarefa.service';
+import { ITask } from '../../models/ITarefa.model';
 
 @Component({
   selector: 'app-card',
@@ -9,8 +11,14 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
 
-  @Input() type !: string;
-  @Input() title !: string;
-  @Input() complete !: boolean;
+  @Input() task!: ITask;
+
+  constructor(
+    private tarefaService: TarefaService
+  ){}
+
+  deleteTask() {
+    this.tarefaService.deleteTask(this.task.id);
+  }
 
 }
