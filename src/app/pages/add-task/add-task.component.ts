@@ -34,7 +34,7 @@ export class AddTaskComponent implements OnInit {
   addTask() {
     if (!this.addTaskForm.valid) return;
     
-    this.task.title = this.addTaskForm.value.title;
+    this.task.title = this.addTaskForm.value.title.toUpperCase();
     this.task.type = this.addTaskForm.value.type;
     
     this.tarefaService.addTask(this.task);
