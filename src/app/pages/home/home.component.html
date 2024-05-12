@@ -1,10 +1,19 @@
 <app-header></app-header>
 
-<form class="search-form">
-    <label for="search-input">
-        <input id="search-input" type="text" placeholder="Buscar tarefa">
-    </label>
-    <button>
-        <i class="fa-solid fa-magnifying-glass"></i>
-    </button>
-</form>
+<main>
+    <form class="search-form">
+        <label for="search-input">
+            <input id="search-input" type="text" placeholder="Buscar tarefa">
+        </label>
+        <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </form>
+
+
+    <div class="cards">
+        @for (task of tasks; track $index) {
+            <app-card [type]="task.type" [title]="task.title" [complete]="task.complete"></app-card>
+        }
+    </div>
+</main>
