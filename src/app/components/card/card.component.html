@@ -2,7 +2,7 @@
     <div class="type-task">
         <p>{{ task.type }}</p>
     </div>
-    <div class="content">
+    <div [ngClass]="task.complete ? 'complete' : ''" class="content">
         <h3>{{ task.title }}</h3>
     </div>
     <div class="action-buttons">
@@ -10,11 +10,11 @@
             <i class="fa-regular fa-pen-to-square"></i>
             <p>Editar</p>
         </button>
-        <button>
+        <button (click)="deleteTask()">
             <i class="fa-solid fa-trash"></i>
-            <p (click)="deleteTask()">Excluir</p>
+            <p>Excluir</p>
         </button>
-        <button>
+        <button (click)="markAsDone()">
             <i class="fa-regular fa-square-check"></i>
             <p>Concluir</p>
         </button>
