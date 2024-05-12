@@ -3,11 +3,12 @@ import { TarefaService } from '../../services/tarefa.service';
 import { ITask } from '../../models/ITarefa.model';
 import { HeaderComponent } from '../../components/header/header.component';
 import { CardComponent } from '../../components/card/card.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, CardComponent],
+  imports: [HeaderComponent, CardComponent, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

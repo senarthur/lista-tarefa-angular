@@ -34,6 +34,28 @@
 main {
     padding: 25px;
 
+    .add-task {
+        position: absolute;
+        top: 20%;
+        right: 10px;
+
+        background-color: var(--bg-color);
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+        text-decoration: none;
+
+        i {
+            color: #FFF;
+        }
+    }
+
     .cards {
         max-width: 800px;
         margin: 0 auto;

@@ -10,6 +10,10 @@
         </button>
     </form>
 
+    <a class="add-task" [routerLink]="['/add-task']">
+        <i class="fa-solid fa-plus"></i>
+    </a>
+
 
     <div class="cards">
         @for (task of filteredTasks; track $index) {

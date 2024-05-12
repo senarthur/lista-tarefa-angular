@@ -1,17 +1,17 @@
 <app-header title="Adicionar Tarefa"></app-header>
 
-<form class="add-task-form">
+<form [formGroup]="addTaskForm" class="add-task-form">
     <div class="input-group">
         <label for="title-input">Título</label>
-        <input type="text" id="title-input" placeholder="Título">
+        <input type="text" id="title-input" placeholder="Título" formControlName="title">
     </div>
 
     <div class="select-box">
-        <select name="type" id="type">
-            <option value="personal">Pessoal</option>
-            <option value="corporative">Corporativo</option>
-            <option value="student">Estudantil</option>
+        <select name="type" id="type" formControlName="type">
+            <option value="Pessoal">Pessoal</option>
+            <option value="Corporativo">Corporativo</option>
+            <option value="Estudantil">Estudantil</option>
         </select>
     </div>
-    <button>Adicionar</button>
+    <button (click)="addTask()">Adicionar</button>
 </form>
