@@ -12,13 +12,13 @@ export class TarefaService {
   private taskSubject: BehaviorSubject<ITask[]> = new BehaviorSubject<ITask[]>([
     {
       id: 'JHLP1cfe',
-      title: 'Fazer dever de casa',
+      title: 'FAZER DEVER DE CASA',
       type: 'Estudantil',
       complete: false,
     },
     {
       id: 'LB12pntw',
-      title: 'Terminar o código de lista de tarefas',
+      title: 'TERMINAR O CÓDIGO DE LISTA DE TAREFAS',
       type: 'Corporativo',
       complete: false,
     }

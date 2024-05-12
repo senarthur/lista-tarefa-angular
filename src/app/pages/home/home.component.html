@@ -3,7 +3,7 @@
 <main>
     <form class="search-form">
         <label for="search-input">
-            <input id="search-input" type="text" placeholder="Buscar tarefa">
+            <input id="search-input" type="text" placeholder="Buscar tarefa" (keyup)="searchTask($event)">
         </label>
         <button>
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -12,7 +12,7 @@
 
 
     <div class="cards">
-        @for (task of tasks; track $index) {
+        @for (task of filteredTasks; track $index) {
             <app-card [task]="task"></app-card>
         }
     </div>
