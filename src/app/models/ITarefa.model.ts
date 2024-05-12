@@ -1,15 +1,15 @@
 interface ITask {
+    id: string,
     title: string,
     type: string,
-    priority: string,
     complete: boolean
 }
 
 function createNewTask(): ITask {
     return {
+        id: '',
         title: '',
         type: '',
-        priority: '',
         complete: false
     }
 }
