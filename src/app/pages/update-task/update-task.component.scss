@@ -1,0 +1,49 @@
+.update-task-form {
+    margin: 40px auto;
+    max-width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input {
+        display: block;
+        width: 800px;
+        max-width: 800px;
+        height: 10px;
+        padding: 15px;
+
+        background-color: #EDEDED;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+    
+    .select-box {
+        background-color: #EDEDED;
+        max-width: 100px;
+
+        select {
+            padding: 5px;
+            background-color: #EDEDED;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+    }
+
+    button {
+        padding: 15px;
+        background-color: #EDEDED;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+    }
+}

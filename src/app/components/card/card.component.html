@@ -6,7 +6,7 @@
         <h3>{{ task.title }}</h3>
     </div>
     <div class="action-buttons">
-        <button>
+        <button [routerLink]="['/update-task', task.id]">
             <i class="fa-regular fa-pen-to-square"></i>
             <p>Editar</p>
         </button>
