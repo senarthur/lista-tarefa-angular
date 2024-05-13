@@ -1,4 +1,6 @@
 .add-task-form {
+    padding: 25px;
+    
     margin: 40px auto;
     max-width: 800px;
 
@@ -14,7 +16,7 @@
 
     input {
         display: block;
-        width: 800px;
+        width: 100%;
         max-width: 800px;
         height: 10px;
         padding: 15px;
